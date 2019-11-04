@@ -24,10 +24,10 @@ def literal_aoh
 end
 
 def aoh_lookup(aoh, row, key)
-  array[2][:name]
+  aoh[row][key]
 end
 
 def aoh_update(aoh, row, key, new_value)
-  array[1][:name] = "Joelle van Dyne (PGOAT)"
-  return array[1][:name]
+  aoh[row][key] = new_value
+  aoh
 end
