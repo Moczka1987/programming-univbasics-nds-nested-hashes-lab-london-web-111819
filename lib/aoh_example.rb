@@ -28,6 +28,6 @@ def aoh_lookup(aoh, row, key)
 end
 
 def aoh_update(aoh, row, key, new_value)
-  array[row][:key] = new_value
+  array[1][:name] = new_value
   return oah[row][:key]
 end
