@@ -24,10 +24,10 @@ def literal_aoh
 end
 
 def aoh_lookup(aoh, row, key)
-  oah[row][key]
+  oah[row][:key]
 end
 
 def aoh_update(aoh, row, key, new_value)
-  oah[row][key] = new_value
-  return oah[row][key]
+  oah[row][:key] = new_value
+  return oah[row][:key]
 end
